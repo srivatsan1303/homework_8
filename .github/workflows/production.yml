@@ -30,7 +30,7 @@ jobs:
   build-and-push-docker:
     needs: test
     runs-on: ubuntu-latest
-    environment: production # Specifies the environment to use
+    environment: vatsan # Specifies the environment to use
     steps:
       - uses: actions/checkout@v4
       
@@ -47,7 +47,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: srivatsan1303/docker_demo:latest
+          tags: srivatsan1303/homework_8:latest
 
           # Add other relevant build parameters here
 
